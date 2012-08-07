@@ -1,12 +1,12 @@
-# revision 25860
+# revision 26313
 # category Package
 # catalog-ctan /macros/latex/contrib/exceltex
-# catalog-date 2012-03-31 19:32:30 +0200
+# catalog-date 2012-05-07 22:43:29 +0200
 # catalog-license gpl
 # catalog-version 0.5.1
 Name:		texlive-exceltex
 Version:	0.5.1
-Release:	1
+Release:	2
 Summary:	Get data from Excel files into LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exceltex
