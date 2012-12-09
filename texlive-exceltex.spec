@@ -63,3 +63,15 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5.1-2
++ Revision: 812254
+- Update to latest release.
+
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5.1-1
++ Revision: 790568
+- Import texlive-exceltex
+- Import texlive-exceltex
+
