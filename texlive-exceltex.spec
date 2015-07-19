@@ -6,7 +6,7 @@
 # catalog-version 0.5.1
 Name:		texlive-exceltex
 Version:	0.5.1
-Release:	9
+Release:	10
 Summary:	Get data from Excel files into LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exceltex
