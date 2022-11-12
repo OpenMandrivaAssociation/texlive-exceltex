@@ -1,18 +1,12 @@
-# revision 26313
-# category Package
-# catalog-ctan /macros/latex/contrib/exceltex
-# catalog-date 2012-05-07 22:43:29 +0200
-# catalog-license gpl
-# catalog-version 0.5.1
 Name:		texlive-exceltex
-Version:	0.5.1
-Release:	12
+Version:	26313
+Release:	1
 Summary:	Get data from Excel files into LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exceltex
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exceltex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exceltex.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exceltex.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exceltex.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -33,12 +27,12 @@ spreadsheet applications are able to read and write Excel
 files.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -52,26 +46,14 @@ files.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/exceltex/exceltex exceltex
+ln -sf %{_texmfdistdir}/scripts/exceltex/exceltex exceltex
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5.1-2
-+ Revision: 812254
-- Update to latest release.
-
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5.1-1
-+ Revision: 790568
-- Import texlive-exceltex
-- Import texlive-exceltex
-
