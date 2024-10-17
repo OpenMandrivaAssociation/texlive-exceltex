@@ -3,7 +3,7 @@ Version:	26313
 Release:	2
 Summary:	Get data from Excel files into LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/exceltex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/exceltex
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exceltex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/exceltex.doc.r%{version}.tar.xz
