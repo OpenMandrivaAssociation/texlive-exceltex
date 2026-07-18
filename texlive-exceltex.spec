@@ -1,5 +1,6 @@
 %global tl_name exceltex
 %global tl_revision 76924
+%global tl_bin_links exceltex:%{_texmfdistdir}/scripts/exceltex/exceltex
 
 Name:		texlive-%{tl_name}
 Epoch:		1
@@ -15,6 +16,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(exceltex.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 Exceltex is a LaTeX package combined with a helper program written in
